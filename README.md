@@ -214,7 +214,6 @@ The system generates:
 ## Author
 
 **Ayush Kumar**
-
-B.Tech Computer Science Engineering
+B.Tech CSE in AI
 
 AI Interview Evaluation System Project
