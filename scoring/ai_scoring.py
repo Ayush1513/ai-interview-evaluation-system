@@ -46,7 +46,7 @@ CANDIDATE ANSWER:
 
 Evaluate using these parameters:
 
-1. technical_accuracy
+1. answer_accuracy
 - Correctness of answer
 - Concept understanding
 
@@ -128,7 +128,7 @@ Return ONLY valid JSON.
 JSON FORMAT:
 
 {{
-    "technical_accuracy":8,
+    "answer_accuracy":8,
 
     "depth":7,
 
@@ -238,9 +238,9 @@ JSON FORMAT:
 
         return {
 
-            "technical_accuracy":
+            "answer_accuracy":
                 data.get(
-                    "technical_accuracy",
+                    "answer_accuracy",
                     5
                 ),
 
@@ -327,7 +327,7 @@ JSON FORMAT:
 
         return {
 
-            "technical_accuracy": 5,
+            "answer_accuracy": 5,
 
             "depth": 5,
 
