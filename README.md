@@ -1,14 +1,14 @@
 # AI Interview Evaluation System
 
-* Overview
+## Overview
 
 AI Interview Evaluation System is an AI-powered interview assessment platform that evaluates candidate responses, generates detailed competency scores, provides hiring recommendations, and creates professional PDF reports.
 
 The system leverages Claude AI to analyze interview answers and assess candidates across multiple evaluation criteria such as accuracy, technical depth, communication skills, confidence, and problem-solving ability.
 
+---
 
-
-# Features
+## Features
 
 * AI-powered answer evaluation using Claude API
 * Automated scoring system
@@ -21,9 +21,9 @@ The system leverages Claude AI to analyze interview answers and assess candidate
 * Interview history tracking
 * Technical and non-technical interview support
 
+---
 
-
-# Evaluation Parameters
+## Evaluation Parameters
 
 The system evaluates candidates on:
 
@@ -36,9 +36,9 @@ The system evaluates candidates on:
 | Problem Solving | Analytical thinking          |
 | Confidence      | Confidence level in response |
 
+---
 
-
-# Competency Analysis
+## Competency Analysis
 
 The system generates competency scores for:
 
@@ -46,36 +46,36 @@ The system generates competency scores for:
 * Communication Skills
 * Technical Depth
 
+---
 
+## Technology Stack
 
-# Technology Stack
+### Backend
 
-* Backend
+* Python
+* FastAPI
 
-> Python
-> FastAPI
+### Database
 
-* Database
+* SQLite
 
-> SQLite
+### AI Model
 
-* AI Model
+* Claude API (Anthropic)
 
-> Claude API (Anthropic)
+### Report Generation
 
-* Report Generation
+* ReportLab
 
-> ReportLab
+### API Testing
 
-* API Testing
+* Swagger UI
 
-> Swagger UI
+---
 
+## Project Structure
 
-
-# Project Structure
-
-
+```text
 backend/
 │
 ├── database/
@@ -104,10 +104,11 @@ backend/
 │   └── scoring_service.py
 │
 └── app.py
+```
 
+---
 
-
-# Workflow
+## Workflow
 
 1. Candidate submits an interview answer.
 2. Claude AI evaluates the response.
@@ -119,34 +120,34 @@ backend/
 8. Results are stored in the database.
 9. A PDF interview report is generated.
 
+---
 
+## Scoring Process
 
-# Scoring Process
-
-* Individual Scores
+### Individual Scores
 
 The AI evaluates:
 
-> Accuracy
-> Technical Depth
-> Clarity
-> Communication
-> Problem Solving
-> Confidence
+* Accuracy
+* Technical Depth
+* Clarity
+* Communication
+* Problem Solving
+* Confidence
 
-# Composite Score
+### Composite Score
 
 The Final Composite Score is calculated by combining all individual evaluation metrics.
 
-# Competency Score
+### Competency Score
 
 Competency scores are derived from:
 
-> Domain Knowledge
-> Communication Skills
-> Technical Understanding
+* Domain Knowledge
+* Communication Skills
+* Technical Understanding
 
-# Recommendation Logic
+### Recommendation Logic
 
 | Score Range | Recommendation             |
 | ----------- | -------------------------- |
@@ -155,63 +156,64 @@ Competency scores are derived from:
 | 4 - 5.9     | Consider with Reservations |
 | Below 4     | Not Recommended            |
 
+---
 
+## API Endpoints
 
-# API Endpoints
+### Evaluate Candidate
 
-# Evaluate Candidate
-
-
+```http
 POST /score
-
+```
 
 Evaluates candidate answer and generates complete assessment.
 
-# Interview History
+### Interview History
 
-
+```http
 GET /interviews
+```
 
 Returns all interview records.
 
+### Get Interview
 
-# Get Interview
-
-
+```http
 GET /interview/{id}
+```
 
 Returns interview details by ID.
 
+---
 
-
-# Output Generated
+## Output Generated
 
 The system generates:
 
-> Individual Scores
-> Competency Analysis
-> Strengths
-> Weaknesses
-> Follow-Up Questions
-> Hiring Recommendation
-> Final Composite Score
-> PDF Interview Report
+* Individual Scores
+* Competency Analysis
+* Strengths
+* Weaknesses
+* Follow-Up Questions
+* Hiring Recommendation
+* Final Composite Score
+* PDF Interview Report
 
+---
 
+## Future Enhancements
 
-# Future Enhancements
+* Speech-to-Text Integration
+* Video Interview Analysis
+* Real-Time Interview Evaluation
+* Candidate Ranking Dashboard
+* Email Report Delivery
 
-> Speech-to-Text Integration
-> Video Interview Analysis
-> Real-Time Interview Evaluation
-> Candidate Ranking Dashboard
-> Email Report Delivery
+---
 
+## Author
 
-
-# Author
-
-Ayush Kumar**
+**Ayush Kumar**
 
 B.Tech Computer Science Engineering
 
